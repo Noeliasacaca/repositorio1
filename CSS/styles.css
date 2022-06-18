@@ -595,3 +595,58 @@
 		flex-direction: column;
 	}
 }
+
+
+
+
+@keyframes animar{
+	0%{width: 100px}
+	25%{width: 300px}
+	50%{width: 500px background-color:yellow;}  
+	75%{width: 300px}
+	100%{width: 100px background-color: pink;}
+
+}
+
+#productos h2{
+	animation-name: animar;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	animation-delay: 0;
+	width: 100%;
+	height: 200px;
+	background-color: #008080;
+
+
+}
+
+.botones{
+	width: 100px
+	height:25px;
+	border: 0
+	color: black;
+	border-radius: 3px
+	background: linear-gradient(to top, pink, withe);
+}
+
+
+@keyframes animationHeader{
+	0%{background-image: url(img\imagenes7\20_ off.png);}
+		25%{background-image: url(img\imagenes7\envio(1).png);}
+			50%{background-image: url(img\imagenes7\nuevospro.jpg);}
+
+
+
+}
+header{	
+	animation-name: animationHeader;
+	height: 40vh
+	background-size:cover;
+	animation-iteration-count: infinite;
+	animation-duration: 8s;
+
+
+	
+
+
+}
