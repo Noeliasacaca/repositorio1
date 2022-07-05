@@ -9,39 +9,39 @@ html{
         font: $fontSm;
     }
 body{
-        background-color: map-get($map: $paletaColores, $key: 'dos');
-        font-family: $segunfoFonts;
+        background-color: $segundoColor;
+        font-family: $primerFonts;
         font: $fontSm;
         flex-wrap: wrap;
 }
 #botonera{
-         background-color: map-get($map: $paletaColores, $key: 'uno');
+         background-color: $colorBotonera;
         img{
             height: 90px;
              }
         ul li a{
             position: relative;
-            color: map-get($map: $paletaColores, $key: 'dos');
+            color: $segundoColor;
             font-size: 1rem;
             padding: 30px
         }
           li a:hover {
-             background: map-get($map: $paletaColores, $key: 'tres');
-             color: map-get($map: $paletaColores, $key: 'siete');
+             background: tercerColor;
+             color: $quintoColor;
               border-radius: 30px
         }
 }
 
 li{
      a:hover {
-        background: map-get($map: $paletaColores, $key: 'tres');
-        color: map-get($map: $paletaColores, $key: 'siete');
+        background: #607f9c;
+        color: #87B0D7;
         border-radius: 30px
     }
 
 }
 .bg-colorNav{
-    background-color: map-get($map: $paletaColores, $key: 'uno');
+    background-color: $colorBotonera;
     width: 100%;
 }
 
@@ -54,21 +54,41 @@ header{
  /*main*/
 
 main {
-article img{
+    h2, h3{
+        font-family: segunfoFonts;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+     article img{
          justify-content: space-between; 
          border-top-left-radius: 20px;
         border-top-right-radius: 20px;
 }
 
 h2{
-    background-color: map-get($map: $paletaColores, $key: 'ocho');
-}
-article{
-        text-align: center;
-        padding: 0 20px 20px;
-    } 
+    animation-name: animar;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0;
+    width: 100%;
+    height: 200px;
+    background-color: $sextoColor;
 }
 
+article{
+        text-align: center;
+        padding: 0 20px 20px
+    }
+    
+}
+
+h4{
+      font-family: $tercerFons;
+      text-align: center;
+    }
 
 #productosNue{
     margin-right: auto;
@@ -77,19 +97,22 @@ article{
 
 
 .productCol{
-            background-color: map-get($map: $paletaColores, $key: 'ocho');
+            background-color: $sextoColor;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
     }
    
    /*main*/
 
+.bg-colorBot{
+        background-color: $tercerColor;
+    }
 
     
 #presentacion{
     p{
         text-align: center;
-        font-size: $fontMd;
+        font-size: 2rem;
     }
 
 }
@@ -104,13 +127,14 @@ article{
 
 .seconNav{
 
-        background-color: map-get($map: $paletaColores, $key: 'ocho');
+        background-color: $sextoColor;
         text-align: center;
     }
 
 .seconNav{
-     a{
-        font-size: $fontSm;
+     b{
+        font-size: $fontSeg;
+        font-family: $segunfoFonts;
     }
 }
 .seconNav li{
@@ -122,14 +146,22 @@ article{
         text-align: center;
     }
 
+ h6{
+        font-size: 1rem;    
+        text-align: center;
+        font-family: 'Secular One', sans-serif;
+        font-size: 1rem;
+        
+    } 
 
  ul li a i{
-         color:map-get($map: $paletaColores, $key: 'dos');
+         color: $segundoColor;
     
     }
+
  footer{
-         background-color: map-get($map: $paletaColores, $key: 'uno');
-        color: map-get($map: $paletaColores, $key: 'cuatro');
+         background-color: $colorBotonera;
+        color: $cuartoColor;
         align-self: flex-end;
         width: 100%;
         text-align: center;
@@ -141,6 +173,8 @@ article{
     .socialItem{
     list-style: none;
     }
+
+
     .social{
         ul{
     display: flex;

@@ -1,27 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Catamaran:wght@800&family=Righteous&family=Roboto:wght@100&family=Russo+One&family=Secular+One&display=swap");
-.boton, .btn-rounded {
-  width: 100%;
-  height: 30px;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .boton:hover, .btn-rounded:hover {
-    background: #C0D7EA;
-    cursor: pointer; }
-
-.btn-rounded {
-  border-radius: 5px; }
-
-body {
-  background-color: #C0D7EA; }
-
-.boton, .btn-rounded {
-  background: #607f9c; }
-
-.botonera {
-  background: #050309; }
-
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +11,7 @@ html {
 
 body {
   background-color: #C0D7EA;
-  font-family: "Secular One", sans-serif;
+  font-family: "Roboto", sans-serif;
   font: 1em;
   flex-wrap: wrap; }
 
@@ -48,7 +25,7 @@ body {
     font-size: 1rem;
     padding: 30px; }
   #botonera li a:hover {
-    background: #607f9c;
+    background: tercerColor;
     color: #87B0D7;
     border-radius: 30px; }
 
@@ -67,17 +44,35 @@ header {
 
 /*  header*/
 /*main*/
+main h2, main h3 {
+  font-family: segunfoFonts;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px 0; }
+
 main article img {
   justify-content: space-between;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px; }
 
 main h2 {
+  animation-name: animar;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0;
+  width: 100%;
+  height: 200px;
   background-color: #9bb3c7; }
 
 main article {
   text-align: center;
   padding: 0 20px 20px; }
+
+h4 {
+  font-family: "Russo One", sans-serif;
+  text-align: center; }
 
 #productosNue {
   margin-right: auto;
@@ -89,9 +84,12 @@ main article {
   border-top-right-radius: 20px; }
 
 /*main*/
+.bg-colorBot {
+  background-color: #607f9c; }
+
 #presentacion p {
   text-align: center;
-  font-size: 2em; }
+  font-size: 2rem; }
 
 .encabezado {
   grid-column: 1/4;
@@ -102,8 +100,9 @@ main article {
   background-color: #9bb3c7;
   text-align: center; }
 
-.seconNav a {
-  font-size: 1em; }
+.seconNav b {
+  font-size: 1.3rem;
+  font-family: "Secular One", sans-serif; }
 
 .seconNav li {
   padding: 10px;
@@ -112,12 +111,18 @@ main article {
 #contactanos {
   text-align: center; }
 
+h6 {
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  font-size: 1rem; }
+
 ul li a i {
   color: #C0D7EA; }
 
 footer {
   background-color: #050309;
-  color: #ecdde9;
+  color: white;
   align-self: flex-end;
   width: 100%;
   text-align: center; }
@@ -149,39 +154,3 @@ footer {
     width: 300px; }
   100% {
     width: 100px; } }
-
-h1 {
-  font-size: 2em;
-  text-align: center;
-  margin: 20px 0;
-  padding: 20px 0;
-  text-transform: uppercase; }
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin: 20px 0;
-  padding: 20px 0;
-  text-transform: uppercase; }
-
-h4 {
-  font-size: 1em;
-  text-align: center;
-  margin: 20px 0;
-  padding: 20px 0;
-  text-transform: uppercase; }
-
-h6 {
-  font-size: 1em;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-h2 {
-  animation-name: animar;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
-  animation-delay: 0;
-  width: 100%;
-  height: 200px; }

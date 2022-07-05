@@ -1,0 +1,50 @@
+//extend
+.boton{
+	width: 100%;
+	height: 30px;
+	border: none;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+ 	&:hover{
+ 		background: #C0D7EA;
+ 		cursor: pointer;
+ 	}
+
+}
+.btn-rounded{
+	@extend .boton;
+		border-radius: 5px
+
+}
+
+//maps
+$paletaColores:(
+	 'uno': #050309,
+    'dos': #C0D7EA,
+    'tres':#607f9c,
+    'cuatro':#ecdde9,
+    'cinco': #9b9a9b,
+    'seis': #292829,
+    'siete':#87B0D7,
+    'ocho':#9bb3c7,
+    'nueve':#bd9eb8,
+    'diez':#e7cfe3,
+    'once': #6e646c,
+    'doce': #c3daeb,
+    'trece':#3f393e,
+	);
+
+body{
+	background-color: map-get($map: $paletaColores, $key: 'dos')
+}
+
+.boton{
+	background:  map-get($map: $paletaColores, $key: 'tres')
+}
+
+.botonera{
+	background:  map-get($map: $paletaColores, $key: 'uno')
+}
