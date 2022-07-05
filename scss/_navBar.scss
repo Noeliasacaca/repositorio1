@@ -34,8 +34,13 @@ body{
 
 li{
      a:hover {
+<<<<<<< HEAD
         background: map-get($map: $paletaColores, $key: 'tres');
         color: map-get($map: $paletaColores, $key: 'siete');
+=======
+        background: $tercerColor;
+        color: $quintoColor;
+>>>>>>> 7a3aa769d2764c2fb8f2740e12c8c6159de47b34
         border-radius: 30px
     }
 

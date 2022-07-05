@@ -1,3 +1,8 @@
 node_modules/
 *.ai
 *.temp
+<<<<<<< HEAD
+=======
+/node_modules/
+node_modules/
+>>>>>>> 7a3aa769d2764c2fb8f2740e12c8c6159de47b34
