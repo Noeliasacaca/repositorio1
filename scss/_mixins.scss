@@ -1,0 +1,36 @@
+@mixin tituloTexto($font-size, $text-align, $margin, $padding, $text-transform,                                      ){
+		 	font-size: $font-size;
+		 	text-align:$text-align;
+		 	margin: $margin;
+		 	padding: $padding;
+		 	text-transform:$text-transform;		 	
+}
+
+h1{
+@include tituloTexto($fontMd, center, 20px 0, 20px 0 , uppercase);
+}
+
+h2{
+@include tituloTexto($fontMd, center, 20px 0, 20px 0 , uppercase);
+}
+
+h4{
+@include tituloTexto($fontSm, center, 20px 0, 20px 0, uppercase);
+}
+
+h6{
+@include tituloTexto($fontSm, center, 0, 0, uppercase);
+}
+
+@mixin animaciones($animation-name, $animation-timing-function, $animation-duration,  $animation-delay, $width, $height ){
+	animation-name: $animation-name;
+    animation-timing-function: $animation-timing-function;
+    animation-duration: $animation-duration;
+    animation-delay: $animation-delay;
+    width: $width;
+    height: $height;
+	}
+
+h2{
+	@include animaciones(animar, ease-in, 3s, 0, 100%, 200px)
+}
