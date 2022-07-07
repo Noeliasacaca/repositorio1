@@ -9,15 +9,13 @@
 	align-items: center;
 
  	&:hover{
- 		background: #C0D7EA;
+ 		background: #649898;
  		cursor: pointer;
  	}
-
 }
 .btn-rounded{
 	@extend .boton;
 		border-radius: 5px
-
 }
 
 //maps
@@ -35,6 +33,9 @@ $paletaColores:(
     'once': #6e646c,
     'doce': #c3daeb,
     'trece':#3f393e,
+    'catorce':#649898,
+    'quince':#7F9BB6,
+
 	);
 
 body{

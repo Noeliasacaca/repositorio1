@@ -18,8 +18,17 @@ h4{
 @include tituloTexto($fontSm, center, 20px 0, 20px 0, uppercase);
 }
 
+h5{
+@include tituloTexto($fontSm, center, 20px 0, 20px 0, uppercase);
+}
+
 h6{
 @include tituloTexto($fontSm, center, 0, 0, uppercase);
+}
+
+legend{
+	@include tituloTexto($fontMd, center, 20px 0, 20px 0 , uppercase);
+
 }
 
 @mixin animaciones($animation-name, $animation-timing-function, $animation-duration,  $animation-delay, $width, $height ){

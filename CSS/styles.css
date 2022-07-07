@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center; }
   .boton:hover, .btn-rounded:hover {
-    background: #C0D7EA;
+    background: #649898;
     cursor: pointer; }
 
 .btn-rounded {
@@ -52,18 +52,13 @@ body {
     color: #87B0D7;
     border-radius: 30px; }
 
-li a:hover {
-  background: #607f9c;
-  color: #87B0D7;
-  border-radius: 30px; }
-
 .bg-colorNav {
   background-color: #050309;
   width: 100%; }
 
 /*  header*/
 header {
-  width: 100vw; }
+  width: 100%; }
 
 /*  header*/
 /*main*/
@@ -79,6 +74,9 @@ main article {
   text-align: center;
   padding: 0 20px 20px; }
 
+h4 {
+  font-size: 2em; }
+
 #productosNue {
   margin-right: auto;
   margin-left: auto; }
@@ -88,15 +86,28 @@ main article {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px; }
 
+main img {
+  width: 100%;
+  height: 350px; }
+
+.galeria img:hover {
+  border: 5px solid #9bb3c7; }
+
 /*main*/
 #presentacion p {
   text-align: center;
-  font-size: 2em; }
+  font-size: 2em;
+  margin-right: auto;
+  margin-left: auto; }
 
-.encabezado {
-  grid-column: 1/4;
-  max-width: 100%;
-  max-height: 100%; }
+.formulario {
+  text-align: center;
+  padding: 0 20px 20px;
+  width: 100%; }
+
+.formulario2 {
+  padding: 0 20px 20px;
+  width: 100%; }
 
 .seconNav {
   background-color: #9bb3c7;
@@ -114,6 +125,14 @@ main article {
 
 ul li a i {
   color: #C0D7EA; }
+
+aside img {
+  margin: 0 auto;
+  display: block; }
+
+nav section iframe {
+  width: 52%;
+  padding: 0 20px 20px; }
 
 footer {
   background-color: #050309;
@@ -137,6 +156,10 @@ footer {
   padding-left: 35px;
   font-size: 35px;
   width: 100%; }
+
+.footer .copy {
+  padding: 10px;
+  color: #ecdde9; }
 
 @keyframes animar {
   0% {
@@ -171,11 +194,25 @@ h4 {
   padding: 20px 0;
   text-transform: uppercase; }
 
+h5 {
+  font-size: 1em;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  text-transform: uppercase; }
+
 h6 {
   font-size: 1em;
   text-align: center;
   margin: 0;
   padding: 0;
+  text-transform: uppercase; }
+
+legend {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 0;
   text-transform: uppercase; }
 
 h2 {
