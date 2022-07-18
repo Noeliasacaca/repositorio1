@@ -15,11 +15,18 @@ h2{
 }
 
 h4{
-@include tituloTexto($fontSm, center, 20px 0, 20px 0, uppercase);
+@include tituloTexto($fontMd, center, 20px 0, 20px 0, uppercase);
 }
 
 h5{
 @include tituloTexto($fontSm, center, 20px 0, 20px 0, uppercase);
+}
+
+.letra{
+@include tituloTexto($fontMd, center, 20px,  20px, uppercase);
+}
+.letr{
+@include tituloTexto($fontTer, center, 20px 0, 20px 0, uppercase);
 }
 
 h6{
@@ -27,8 +34,11 @@ h6{
 }
 
 legend{
-	@include tituloTexto($fontMd, center, 20px 0, 20px 0 , uppercase);
+@include tituloTexto($fontMd, center, 20px 0, 20px 0 , uppercase);
 
+}
+.quienes{
+	@include tituloTexto($fontSeg, center, 20px 0, 20px 0 , uppercase);
 }
 
 @mixin animaciones($animation-name, $animation-timing-function, $animation-duration,  $animation-delay, $width, $height ){
@@ -41,5 +51,8 @@ legend{
 	}
 
 h2{
+	@include animaciones(animar, ease-in, 3s, 0, 100%, 200px)
+}
+h1{
 	@include animaciones(animar, ease-in, 3s, 0, 100%, 200px)
 }

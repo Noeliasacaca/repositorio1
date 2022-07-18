@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 html{
-        scroll-behavior: smooth;
         font-family: $segunfoFonts; 
         font: $fontSm;
     }
@@ -14,21 +13,37 @@ body{
         font: $fontSm;
         flex-wrap: wrap;
 }
+
+body{
+	background-color: map-get($map: $paletaColores, $key: 'dos')
+}
+
+.boton{
+	background:  map-get($map: $paletaColores, $key: 'tres')
+}
+
+.botonera{
+	background:  map-get($map: $paletaColores, $key: 'uno')
+}
+
+h1{
+	background:  map-get($map: $paletaColores, $key: 'veinte')
+}
+
 #botonera{
-         background-color: map-get($map: $paletaColores, $key: 'uno');
-        img{
-            height: 90px;
-             }
+            background-color: map-get($map: $paletaColores, $key: 'uno');
+            img{
+                height: 90px;
+                }
         ul li a{
             position: relative;
             color: map-get($map: $paletaColores, $key: 'dos');
             font-size: 1rem;
             padding: 30px
         }
-          li a:hover {
-             background: map-get($map: $paletaColores, $key: 'tres');
-             color: map-get($map: $paletaColores, $key: 'siete');
-              border-radius: 30px
+        li a:hover {
+            background: map-get($map: $paletaColores, $key: 'tres');
+            color: map-get($map: $paletaColores, $key: 'siete');
         }
 }
 
@@ -40,22 +55,23 @@ body{
 
 /*  header*/
 header{
-     width:100%;
+width:100%;
 }
 /*  header*/
 
- /*main*/
+/*main*/
 
 main {
 article img{
-         justify-content: space-between; 
-         border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+    justify-content: space-between; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 h2{
     background-color: map-get($map: $paletaColores, $key: 'ocho');
 }
+
 article{
         text-align: center;
         padding: 0 20px 20px;
@@ -75,11 +91,11 @@ h4{
 .productCol{
             background-color: map-get($map: $paletaColores, $key: 'ocho');
             border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
     }
 
 main{
-     img{
+img{
         width: 100%;
         height: 350px;
     } }
@@ -91,7 +107,7 @@ main{
 }
 
 
-   /*main*/
+/*main*/
 
 
     
@@ -124,7 +140,7 @@ main{
     }
 
 .seconNav{
-     a{
+a{
         font-size: $fontSm;
     }
 }
@@ -133,13 +149,13 @@ main{
             height:150px ;
     }
 
- #contactanos{
+#contactanos{
         text-align: center;
     }
 
 
- ul li a i{
-         color:map-get($map: $paletaColores, $key: 'dos');
+ul li a i{
+    color:map-get($map: $paletaColores, $key: 'dos');
     
     }
 
@@ -148,6 +164,13 @@ aside{
         margin: 0 auto;
         display: block;
     }
+}
+
+.envioPago{
+    padding: 20px;
+    margin:20px;
+    width: auto;
+    height: auto;
 }
 
 nav{
@@ -159,8 +182,12 @@ nav{
     }
 }
 
- footer{
-         background-color: map-get($map: $paletaColores, $key: 'uno');
+.textqui{
+    padding: 20px;
+    margin: 20px;
+}
+footer{
+        background-color: map-get($map: $paletaColores, $key: 'uno');
         color: map-get($map: $paletaColores, $key: 'cuatro');
         align-self: flex-end;
         width: 100%;
@@ -177,18 +204,18 @@ nav{
         ul{
     display: flex;
     padding: 10px;
-    width: 350px;
+    width: 300px;
     height:50px ;
     margin: auto;
         }
     }
 
+    }
     .socialItem{
     a{
     padding:auto ;
     padding-left: 35px;
-    font-size: 35px;
-    width: 100%;
+    font-size: 190%;
         }
     }
 
@@ -197,7 +224,7 @@ nav{
         color: map-get($map: $paletaColores, $key: 'cuatro')
 
             }
-}
+
 @keyframes animar{
     0%{width: 100px}
     25%{width: 300px}

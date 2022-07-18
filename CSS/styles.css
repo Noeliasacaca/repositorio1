@@ -13,6 +13,21 @@
 .btn-rounded {
   border-radius: 5px; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Secular One", sans-serif;
+  font: 1em; }
+
+body {
+  background-color: #C0D7EA;
+  font-family: "Secular One", sans-serif;
+  font: 1em;
+  flex-wrap: wrap; }
+
 body {
   background-color: #C0D7EA; }
 
@@ -22,21 +37,8 @@ body {
 .botonera {
   background: #050309; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth;
-  font-family: "Secular One", sans-serif;
-  font: 1em; }
-
-body {
-  background-color: #C0D7EA;
-  font-family: "Secular One", sans-serif;
-  font: 1em;
-  flex-wrap: wrap; }
+h1 {
+  background: #9c94bd; }
 
 #botonera {
   background-color: #050309; }
@@ -49,8 +51,7 @@ body {
     padding: 30px; }
   #botonera li a:hover {
     background: #607f9c;
-    color: #87B0D7;
-    border-radius: 30px; }
+    color: #87B0D7; }
 
 .bg-colorNav {
   background-color: #050309;
@@ -130,9 +131,19 @@ aside img {
   margin: 0 auto;
   display: block; }
 
+.envioPago {
+  padding: 20px;
+  margin: 20px;
+  width: auto;
+  height: auto; }
+
 nav section iframe {
   width: 52%;
   padding: 0 20px 20px; }
+
+.textqui {
+  padding: 20px;
+  margin: 20px; }
 
 footer {
   background-color: #050309;
@@ -147,17 +158,16 @@ footer {
 .footer .social ul {
   display: flex;
   padding: 10px;
-  width: 350px;
+  width: 300px;
   height: 50px;
   margin: auto; }
 
-.footer .socialItem a {
+.socialItem a {
   padding: auto;
   padding-left: 35px;
-  font-size: 35px;
-  width: 100%; }
+  font-size: 190%; }
 
-.footer .copy {
+.copy {
   padding: 10px;
   color: #ecdde9; }
 
@@ -188,7 +198,7 @@ h2 {
   text-transform: uppercase; }
 
 h4 {
-  font-size: 1em;
+  font-size: 2em;
   text-align: center;
   margin: 20px 0;
   padding: 20px 0;
@@ -196,6 +206,20 @@ h4 {
 
 h5 {
   font-size: 1em;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  text-transform: uppercase; }
+
+.letra {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  text-transform: uppercase; }
+
+.letr {
+  font-size: 1.6rem;
   text-align: center;
   margin: 20px 0;
   padding: 20px 0;
@@ -215,7 +239,22 @@ legend {
   padding: 20px 0;
   text-transform: uppercase; }
 
+.quienes {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  text-transform: uppercase; }
+
 h2 {
+  animation-name: animar;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 0;
+  width: 100%;
+  height: 200px; }
+
+h1 {
   animation-name: animar;
   animation-timing-function: ease-in;
   animation-duration: 3s;
